@@ -34,6 +34,33 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=8140874139260751&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+    <script>
+    function toggleFAQ(id) {
+        var element = document.getElementById(id);
+        if (element.style.display === "block") {
+            element.style.display = "none";
+        } else {
+            element.style.display = "block";
+        }
+    }
+</script>
+<style>
+    .faq-question {
+        cursor: pointer;
+        padding: 10px;
+        background-color: #ccc;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+    .faq-answer {
+        display: none;
+        padding: 10px;
+        background-color: #f9f9f9;
+        margin-bottom: 5px;
+        border-radius: 5px;
+    }
+</style>
+
 </head>
 
 <body>
@@ -125,6 +152,24 @@ src="https://www.facebook.com/tr?id=8140874139260751&ev=PageView&noscript=1"
 
         
         </div>
+        <section class="active-select show-line" type="section" id="section-faq" style="color: rgb(79, 38, 134);">
+    <div class="center active-select padding content_area" type="center" wd="1200" id="center-faq" bg-color2="rgba(0, 0, 0, 0)">
+        <h2 class="active-select font-big font-hard" type="title" id="title-faq" bg-color2="rgba(0, 0, 0, 0)" style="color: rgb(204, 0, 0);">FAQ - Perguntas Frequentes</h2>
+        <div class="faq-container">
+            <div class="faq-question" onclick="toggleFAQ('faq1')">Pergunta 1</div>
+            <div class="faq-answer" id="faq1">Resposta 1</div>
+            <div class="faq-question" onclick="toggleFAQ('faq2')">Pergunta 2</div>
+            <div class="faq-answer" id="faq2">Resposta 2</div>
+            <div class="faq-question" onclick="toggleFAQ('faq3')">Pergunta 3</div>
+            <div class="faq-answer" id="faq3">Resposta 3</div>
+            <div class="faq-question" onclick="toggleFAQ('faq4')">Pergunta 4</div>
+            <div class="faq-answer" id="faq4">Resposta 4</div>
+            <div class="faq-question" onclick="toggleFAQ('faq5')">Pergunta 5</div>
+            <div class="faq-answer" id="faq5">Resposta 5</div>
+        </div>
+    </div>
+</section>
+
         <footer class="active-select footer" type="section" id="section-80517" bg-color2="transparent" style="background-color: rgb(102, 0, 0); background-image: url(&quot;undefined&quot;), linear-gradient(transparent 0%, transparent 100%); color: rgb(255, 255, 255);">
             <div class="center content_area active-select" type="center" id="center-868060" bg-color2="rgba(0, 0, 0, 0)">
                 <p class="active-select" type="p" id="p-838883" bg-color2="rgba(0, 0, 0, 0)" css-mt="15" style="margin-top: 15px; color: rgb(153, 153, 153);"><a class="active-select" type="link" id="link-233152" style="color: rgb(255, 255, 255);" href=" #link ">Politicas de privacidade </a>&nbsp;|&nbsp;&nbsp;<a class="active-select" type="link" id="link-994021" style="color: rgb(255, 255, 255);" href=" #link ">Termos de uso</a>&nbsp;</p>
